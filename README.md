@@ -28,6 +28,7 @@ CMD ["apache2ctl", "-D", "FOREGROUND"]
 
 # Configuring Docker Bridge Network for IPv6 manualy
 
+```bash
 docker network create --ipv6 --subnet 2001:0DB8::/112 ip6net
 
 docker build -t apache_image:1.0 .
@@ -50,9 +51,12 @@ sudo systemctl restart docker
 docker build -t apache_image:1.0 .
 
 docker run --name myapache --network ip6net -d -p 80:80 apache_image:1.0
+``` 
+
 
 # Deploying with docker-compose the build and network
 
+```bash
 Using the same Dockerfile for the application.
 
 Create the docker-compose config file compose.yaml
@@ -80,13 +84,16 @@ networks:
 docker-compose build --no-cache
 
 docker-compose up &
+``` 
 
 ## Troubleshooting
 
+```bash
 docker ps
 
 docker exec -it mdeleo_web_1 bash
 
 docker rm mdeleo_web_1  -f 
+``` 
 
 
