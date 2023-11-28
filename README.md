@@ -92,6 +92,9 @@ docker-compose up &
 ## Troubleshooting
 
 ```bash
+# Check the bridge interfaces and IP addresses
+ifconfig 
+
 docker ps
 
 docker exec -it mdeleo_web_1 bash
