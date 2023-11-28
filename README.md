@@ -102,4 +102,9 @@ docker exec -it mdeleo_web_1 bash
 docker rm mdeleo_web_1  -f 
 ``` 
 
+## References
 
+https://www.digitalocean.com/community/tutorials/apache-web-server-dockerfile
+https://serverfault.com/questions/949991/how-to-install-tzdata-on-a-ubuntu-docker-image
+https://docs.docker.com/config/daemon/ipv6/
+https://stackoverflow.com/questions/39649458/how-to-assign-ipv6-address-with-docker-compose
