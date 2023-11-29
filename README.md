@@ -36,16 +36,6 @@ EXPOSE 80
 CMD ["apache2ctl", "-D", "FOREGROUND"]
 ``` 
 
-# Configuring Docker Bridge Network for IPv6 manualy
-
-```bash
-docker network create --ipv6 --subnet 2001:0DB8::/112 ip6net
-
-docker build -t apache_image:1.0 .
-
-docker run --name myapache --network ip6net -d -p 80:80 apache_image:1.0
-``` 
-
 
 # Configuring Docker Bridge Network for IPv6 daemon.json
 
@@ -63,7 +53,7 @@ sudo systemctl restart docker
 
 docker build -t apache_image:1.0 .
 
-docker run --name myapache --network ip6net -d -p 80:80 apache_image:1.0
+docker run --name myapache  -d -p 80:80 apache_image:1.0
 ``` 
 
 
