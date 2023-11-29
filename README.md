@@ -17,7 +17,7 @@ This assumes the latest tested Ubuntu 22.04 LTS, but should work with all recent
 
 ```bash
 > vi Dockerfile
-....
+
 FROM ubuntu
 ARG DEBIAN_FRONTEND=noninteractive
 ENV TZ=Etc/UTC
