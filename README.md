@@ -1,6 +1,16 @@
 # webserver-whois-docker
 Dockerize Ubuntu PHP Webserver that provides IPv4/IPv6 address
 
+# Installing docker on Ubuntu
+
+```bash
+sudo apt  install docker.io
+sudo apt  install docker-compose
+# Test
+sudo docker ps
+docker-compose
+``` 
+
 # Create the Dockerfile
 
 This assumes the latest tested Ubuntu 22.04 LTS, but should work with all recent versions. Note the ENV TZ needs to be set, otherwise it fails to update waiting for timezone input.
