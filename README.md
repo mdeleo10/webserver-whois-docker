@@ -104,6 +104,8 @@ docker rm mdeleo_web_1  -f
 
 ## References
 
+* https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04
+* https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04
 * https://www.digitalocean.com/community/tutorials/apache-web-server-dockerfile
 * https://serverfault.com/questions/949991/how-to-install-tzdata-on-a-ubuntu-docker-image
 * https://docs.docker.com/config/daemon/ipv6/
